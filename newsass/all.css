@@ -1,0 +1,519 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+body {
+  position: relative; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+header {
+  flex-shrink: 0;
+  width: 100%;
+  height: 1.17333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 0.45333rem; }
+  header {
+    position: relative; }
+  header:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #C7C7C7; }
+  [data-dpr="1"] header:before {
+    transform-origin: 0 0;
+    transform: scaleY(0.5); }
+
+section {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  section .list li {
+    width: 100%;
+    height: 2.13333rem;
+    border: 1px solid #ccc;
+    border-radius: 0.13333rem;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    margin-bottom: 0.26667rem; }
+    section .list li p {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      padding: 0 0.13333rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+    section .list li p:nth-child(1) {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      justify-content: space-around; }
+      section .list li p:nth-child(1) span:nth-child(1) {
+        font-size: 0.4rem; }
+      section .list li p:nth-child(1) span:nth-child(2) {
+        color: #ccc;
+        font-size: 0.32rem; }
+    section .list li p:nth-child(2) {
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 0.4rem;
+      color: #ccc; }
+      section .list li p:nth-child(2) span {
+        margin-right: 0.26667rem; }
+
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  height: 1.17333rem;
+  background: orange;
+  color: white;
+  text-align: center;
+  line-height: 1.17333rem; }
+
+.dialog {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+  .dialog .box {
+    border-radius: 0.13333rem;
+    width: 80%;
+    height: 4rem;
+    background: white;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 0 0.26667rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0.37333rem; }
+    .dialog .box h3 {
+      width: 100%;
+      height: 1.17333rem;
+      text-align: center;
+      line-height: 1.17333rem; }
+    .dialog .box .input {
+      flex: 1;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-align-items: center;
+      align-items: center;
+      padding: 0 0.13333rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      .dialog .box .input input {
+        width: 100%;
+        height: 1.06667rem;
+        background: #ccc; }
+    .dialog .box p {
+      border-top: 1px solid #ccc;
+      width: 100%;
+      height: 1.17333rem;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */ }
+      .dialog .box p span {
+        flex: 1;
+        color: orange;
+        text-align: center;
+        line-height: 1.17333rem; }
+      .dialog .box p span:nth-child(1) {
+        color: #ccc;
+        border-right: 1px solid #ccc; }

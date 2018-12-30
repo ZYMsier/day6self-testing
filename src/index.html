@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span><</span>
+            <h3>分类列表</h3>
+            <span></span>
+        </header>
+        <section>
+            <ul class="list">
+                <li>
+                    <p>
+                        <span>分类名称：水果</span>
+                        <span>添加时间：2018-06-21</span>
+                    </p>
+                    <p>
+                        <span>编辑</span>
+                        <span id="del">删除</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <footer>添加分类</footer>
+    </div>
+    <div class="dialog">
+        <div class="box">
+            <h3>请填写分类名称</h3>
+            <div class="input">
+                <input id="input" type="text" placeholder="填写分类名称">
+            </div>
+            <p>
+                <span id="cancel">取消</span>
+                <span id="save">保存</span>
+            </p>
+        </div>
+    </div>
+</body>
+<script src="js/require.js" data-main="js/index"></script>
+
+</html>
